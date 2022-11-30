@@ -1,12 +1,7 @@
 import React, { useCallback } from "react";
-import { FiX, FiMinus, FiMaximize2, FiSquare } from "react-icons/fi";
-import remote from "@electron/remote";
-import {
-  Container,
-  WindowActions,
-  MacActionButton,
-  DefaultActionButton,
-} from "./styles";
+import { FiX, FiMinus, FiMaximize2 } from "react-icons/fi";
+// import remote from "@electron/remote";
+import { Container, WindowActions, MacActionButton } from "./styles";
 
 const Header: React.FC = () => {
   const handleCloseWindow = useCallback(() => {

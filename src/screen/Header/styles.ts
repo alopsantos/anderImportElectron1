@@ -63,7 +63,7 @@ export const MacActionButton = styled.button<MacActionButtonProps>`
   border: 0;
   width: 12px;
   height: 12px;
-  border-radius: 5px;
+  border-radius: 6px;
   display: flex;
   align-items: center;
   justify-content: center;
