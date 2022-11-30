@@ -1,13 +1,9 @@
-import React, { useCallback } from "react";
+import React from "react";
 import { FiX, FiMinus, FiMaximize2 } from "react-icons/fi";
-// import remote from "@electron/remote";
 import { Container, WindowActions, MacActionButton } from "./styles";
 
 const Header: React.FC = () => {
-  const handleCloseWindow = useCallback(() => {
-    // const window = remote.getCurrentWindow();
-    // window.close();
-  }, []);
+  const handleCloseWindow = () => {};
   const handleMinimize = () => {};
   const handleMaximize = () => {};
   return (

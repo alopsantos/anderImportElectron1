@@ -11,17 +11,26 @@ export const Container = styled.div`
 `;
 
 export const Nav = styled.nav`
+  background-color: ${(props) => props.theme.colors.white};
   width: 320px;
   height: calc(100vh - 3rem);
   display: flex;
   flex-direction: column;
-  background-color: red;
   align-items: center;
-  justify-content: space-between;
-
+  gap: 5rem;
+  justify-content: end;
+  padding-bottom: 1.5rem;
   div {
-    min-height: 120px;
-    background-color: orange;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    p {
+      color: ${(props) => props.theme.colors.opaque};
+      text-align: center;
+      font-size: 12px;
+      font-weight: 700;
+    }
   }
 `;
 
@@ -35,14 +44,19 @@ export const Content = styled.div`
 export const Seccao = styled.section`
   display: flex;
   min-width: 500px;
-  gap: 1rem;
   margin: 0 auto;
-  align-items: center;
+  /* align-items: center; */
   justify-content: center;
+
+  &.tabelas {
+    background-color: ${(props) => props.theme.colors.white};
+    padding: 1.5rem;
+    border-radius: 0.2rem;
+  }
 `;
 
 export const Card = styled.article`
-  display: flex;
+  /* display: flex; */
 
   form {
     display: flex;

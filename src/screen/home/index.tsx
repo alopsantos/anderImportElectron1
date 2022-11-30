@@ -1,19 +1,20 @@
 import React from "react";
-import Header from "../Header";
 
 import { Container, Content, Nav, Seccao, Card } from "./styles";
+import logoDropbox from "../../assets/dropbox-logo.png";
+import logoVtex from "../../assets/vtex-logo.png";
+// import Header from "../Header";
 
 const Home: React.FC = () => {
   return (
     <Container>
-      <Header />
       <main>
         <Nav>
           <div>
-            <img src="../assets/dropbox-logo.png" alt="Logo dropbox" />
+            <img src={logoDropbox} alt="Logo dropbox" />
           </div>
           <div>
-            <img src="assets/vtex-logo.png" alt="Logo vtex" />
+            <img src={logoVtex} alt="Logo vtex" />
           </div>
           <div>
             <p>
@@ -35,9 +36,9 @@ const Home: React.FC = () => {
               </form>
             </Card>
           </Seccao>
-          <Seccao>
+          <Seccao className="tabelas">
             <Card>
-              <table>
+              <table border={1}>
                 <thead>
                   <tr>
                     <th>Sku Id</th>
@@ -47,6 +48,14 @@ const Home: React.FC = () => {
                 <tbody>
                   <tr>
                     <td>2016304</td>
+                    <td>P</td>
+                  </tr>
+                  <tr>
+                    <td>2016304</td>
+                    <td>M</td>
+                  </tr>
+                  <tr>
+                    <td>2016304</td>
                     <td>G</td>
                   </tr>
                 </tbody>
@@ -54,13 +63,28 @@ const Home: React.FC = () => {
             </Card>
 
             <Card>
-              <table>
+              <table border={1}>
                 <thead>
                   <tr>
                     <th>Foto</th>
                   </tr>
                 </thead>
                 <tbody>
+                  <tr>
+                    <td>Shorts Running Onca.jpg</td>
+                  </tr>
+                  <tr>
+                    <td>Shorts Running Onca.jpg</td>
+                  </tr>
+                  <tr>
+                    <td>Shorts Running Onca.jpg</td>
+                  </tr>
+                  <tr>
+                    <td>Shorts Running Onca.jpg</td>
+                  </tr>
+                  <tr>
+                    <td>Shorts Running Onca.jpg</td>
+                  </tr>
                   <tr>
                     <td>Shorts Running Onca.jpg</td>
                   </tr>
